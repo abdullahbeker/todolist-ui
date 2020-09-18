@@ -1,0 +1,10 @@
+<div class="todo">
+  <div
+    class="todo__whattodo"
+    (click)="toggleTodo(todo.id)"
+    [ngClass]="setClasses()"
+  >
+    {{ todo.whatToDo }}
+  </div>
+  <button class="todo__delete" (click)="deleteTodo(todo.id)">&times;</button>
+</div>

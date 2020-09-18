@@ -1,0 +1,13 @@
+<div class="content">
+  <div class="content__new">
+    <span class="content__new__phrase"> I have to </span>
+    <input
+      type="text"
+      autofocus
+      class="content__new__input"
+      placeholder="update site header"
+      (keyup)="addTodoIfEnterPressed($event)"
+    />
+  </div>
+  <app-todos class="content__list"></app-todos>
+</div>

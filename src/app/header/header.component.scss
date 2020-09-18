@@ -1,0 +1,12 @@
+.header {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1.2em;
+
+  &__appname {
+    color: #eeeeee;
+    font-size: 2em;
+    font-family: "Inconsolata";
+    font-weight: bold;
+  }
+}
