@@ -43,12 +43,15 @@ export class TodoService {
   }
 
   deleteTodo(id: string) {
-    this._http.post(this._baseURL + '/deleteTodo', { id }).subscribe((data) => {
-      this._todos.splice(
-        this._todos.indexOf(this._todos.find((td) => td.id == id)),
-        1
-      );
-      //if (data) this._todos = this._todos.filter((t) => t.id !== id);
-    });
+    this._http
+      .post(this._baseURL + '/deleteTodo', { id })
+      .subscribe((deleted) => {
+        if (deleted) {
+          this._todos.splice(
+            this._todos.indexOf(this._todos.find((td) => td.id == id)),
+            1
+          );
+        }
+      });
   }
 }
