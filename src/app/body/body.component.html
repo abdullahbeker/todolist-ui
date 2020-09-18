@@ -9,5 +9,8 @@
       (keyup)="addTodoIfEnterPressed($event)"
     />
   </div>
-  <app-todos class="content__list"></app-todos>
+  <p class="content__info"># Click on todo to switch it's state</p>
+  <div class="content__list">
+    <app-todo></app-todo>
+  </div>
 </div>

@@ -5,23 +5,13 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { BodyComponent } from './body/body.component';
 import { TodoComponent } from './todo/todo.component';
-import { TodosComponent } from './todos/todos.component';
 import { TodoService } from './todo.service';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    BodyComponent,
-    TodoComponent,
-    TodosComponent
-  ],
-  imports: [
-    BrowserModule,
-    HttpClientModule
-  ],
+  declarations: [AppComponent, HeaderComponent, BodyComponent, TodoComponent],
+  imports: [BrowserModule, HttpClientModule],
   providers: [TodoService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

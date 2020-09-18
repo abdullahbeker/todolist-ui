@@ -1,6 +1,7 @@
 .todo {
   display: flex;
-  margin: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 
   &__whattodo {
     flex: 1;
@@ -13,7 +14,7 @@
 
     &--done {
       text-decoration: line-through;
-      background-color: tomato;
+      background-color: #f4ac90;
     }
   }
 

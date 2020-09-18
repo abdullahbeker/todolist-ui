@@ -2,15 +2,22 @@
   width: 70%;
   margin: 0 auto;
   padding-top: 3em;
+  padding-left: 1em;
+  padding-right: 1em;
   display: flex;
   flex-direction: column;
   height: 100%;
 
+  &__info {
+    font-family: "Inconsolata";
+    color: #6c757d;
+    margin-top: 1em;
+    font-size: 1.2em;
+  }
+
   &__new {
     display: flex;
     align-items: center;
-    padding-left: 1em;
-    padding-right: 1em;
 
     &__phrase {
       font-family: "Inconsolata";
@@ -41,7 +48,6 @@
 
   &__list {
     flex: 1;
-    margin-top: 1em;
     margin-bottom: 1em;
   }
 }
